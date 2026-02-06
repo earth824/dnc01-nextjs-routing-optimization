@@ -1,9 +1,11 @@
-'use client';
+import { Metadata } from 'next';
+import RegisterClient from './RegisterClient';
 
-import { useState } from 'react';
+export const metadata: Metadata = {
+  title: 'Register',
+  description: 'This is the register page of no.1 exciting e-commercer website'
+};
 
 export default function RegisterPage() {
-  const [loading, setLoading] = useState(false);
-
-  return <div>This is Login PageThis is register page</div>;
+  return <RegisterClient />;
 }
